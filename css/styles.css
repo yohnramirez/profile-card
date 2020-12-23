@@ -1,0 +1,127 @@
+:root{
+    /* Primary */
+    --darkCyan: hsl(185, 75%, 39%);
+    --darkBlue: hsl(229, 23%, 23%);
+    --grayBlue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+/* GENERAL STYLES */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--darkCyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20cm -15cm, 4cm 8cm;
+}
+
+h1{
+    font-size: 18px;
+}
+
+h1, h2, h4{
+    color: var(--darkBlue);
+}
+
+span{
+    font-size: 18px;
+    color: var(--darkGray);
+}
+
+/* CARD */
+
+.card{
+    height: 372px;
+    width: 325px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 165px;
+}
+
+/* CARD - DATA */
+
+.personal-data{
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    top: -115px;
+    border-bottom: 1px solid  hsl(0, 5%, 87%);
+}
+
+.bg-personal-data{
+    height: 200px;
+    background: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.personal-data img{
+   border-radius: 100%;
+   border: 5px solid white;
+}
+
+.personal-data h1 span{
+    font-weight: 400;
+}
+
+.personal-data h2{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.personal-data h2 span{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* CARD - STATS */
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+    margin-top: -125px;
+}
+
+.stats-item{
+    margin-top: -25px;
+}
+
+.stats-item h2{
+    font-size: 18px;
+}
+
+.stats-item h4{
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--darkGray);
+    margin-top: -10px;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+
+.attribution { 
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--darkBlue); 
+}
+.attribution a { 
+    color: var(--grayBlue); 
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-position: -7.5cm -15cm, 17cm 10cm;
+    }
+}
